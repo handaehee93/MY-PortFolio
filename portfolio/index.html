@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- fontawesome에서 로고 이미지 파일을 다운로드 받아서 link태그로 불러와 favicon 지정 -->
+  <link rel="shortcut icon" href="./images/mountain-sun-solid.svg" type="image/x-icon">
+  <!-- fontawesome 스크립트 태그 -->
+  <script src="https://kit.fontawesome.com/eef7aefb7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="fa-solid fa-mountain-sun"></i>
+      <a href="#">산책갈까</a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item">Home</li>
+      <li class="navbar__menu__item">About</li>
+      <li class="navbar__menu__item">Skills</li>
+      <li class="navbar__menu__item">My work</li>
+      <li class="navbar__menu__item">Testimonial</li>
+      <li class="navbar__menu__item">Contact</li>
+    </ul>
+  </nav>
+  <!-- home -->
+  <section id="home">
+    <img class="home__avartar" src="./images/favicon.png" alt="">
+    <h1 class="home__title">Hello! <br> I'm DaeHee</h1>
+    <h2 class="home__descriptioin">I'm frontend developer</h2>
+    <button class="home__contact">contact me</button>
+  </section>
+  <!-- about -->
+  <section id="about">
+    <!-- about에는 크게 4가지 블록이 들어간다. -->
+    <h1>about me</h1>
+    <p>I'm styding frontend-develop last year. It was very interesting. So i'm satisfied with my choice</p>
+    <!-- about-majors라는 블록에는 3가지의 프로필?이 들어갈 것이기 때문에 class이름을 majors라고 지었다. -->
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <div class="major__title">
+          Front-end
+        </div>
+        <div class="major__description">
+          HTML, CSS, JavaScript, React
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <div class="major__title">
+          Front-end
+        </div>
+        <div class="major__description">
+          HTML, CSS, JavaScript, React
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <div class="major__title">
+          Front-end
+        </div>
+        <div class="major__description">
+          HTML, CSS, JavaScript, React
+        </div>
+      </div>
+    </div>
+    <div class="about__schools">
+      <div class="school">
+        <img src="./images/스크린샷 2023-02-05 오후 1.32.49.png" alt="code-states" class="school__logo">
+        <p class="school__name">코드스테이츠</p>
+        <p class="school__period">2022.10.20 ~ 2023.4.12</p>
+      </div>
+    </div>
+  </section>
+    <!-- skills -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <h2>Skills & Attribute</h2>
+    <p>리액트로 개발이 가능하고, 백엔드와 협업한 경험이 있어 프론트와 백엔드가 어떻게 연결되어 있는지 이해하고 있습니다.</p>
+    <div class="Skillset">
+      <div class="Skillset__left">
+        <h3 class="Skillset__left__title">Skills</h3>
+        <div class="skill">
+          <span>HTML</span>
+          <span>90 %</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <span>90 %</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+        <div class="skill">
+          <span>JS</span>
+          <span>80 %</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <span>70 %</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+      </div>
+      <div class="Skillset__right">
+        <div class="tools">
+          <h3 class="tools__title">Tools</h3>
+          <ul class="tools__list">
+            <!-- (li>span)*5 이렇게 하면 아래의 코드가 한번에 작성이 된다. -->
+            <li><span>VS Code</span></li>
+            <li><span>eclipse</span></li>
+            <li><span>Notion</span></li>
+            <li><span>Canva</span></li>
+            <li><span>Figma</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="etc__title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>Git</span></li>
+            <li><span>Node.JS</span></li>
+            <li><span>Git Hub</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- work  -->
+  <section class="work">
+    <h1>My Work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn">All <span class="categoty__count">3</span></button>
+      <button class="category__btn">FrontEnd <span class="categoty__count">5</span></button>
+      <button class="category__btn">BackEnd <span class="categoty__count">7</span></button>
+      <button class="category__btn">Mobile <span class="categoty__count">1</span></button>
+    </div>
+
+    <div class="work__projects">
+      <a href="https://www.notion.so/10f201dafa24462e864df5fb1a9364fa?v=a1dabfcbe59a4c9aac04534427e60070&p=c81f9b66994b4960a68e93c782bc9617&pm=s" target="_blank">
+        <img 
+        class="project__image" 
+        src="./images/스크린샷 2023-02-05 오후 3.26.49.png" 
+        alt="portfolio screenshot"
+        />
+        <div class="project__description">
+          <h3>Web Site</h3>
+          <span>Clone Coding with Html & Css</span>
+        </div>
+      </a>
+    </div>
+  </section>  
+  
+  <!-- testimoniars -->
+  <section id="testimoniars">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimoiar__avartar">
+      <img src="" alt="" />
+    </div>
+    <div class="testimonial__speech-bubbles">
+      <p>dae hee is perfect</p>
+      <p><a href="https://www.inflearn.com/" target="_blank">inflearn</a></p>
+    </div>
+  </section>
+
+  <!-- contact  -->
+  <section id="contact">
+    <h1 class="contact__title">Let's Talk</h1>
+    <h2 class="contact__email">hdh8990@naver.com</h2>
+    <div class="contact__link">
+      <a href="https://github.com/handaehee93"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </section>
+  
+</body>
+</html>
